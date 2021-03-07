@@ -1,9 +1,0 @@
-.input{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.item{
-    display:flex;
-    flex-direction: column;
-}
