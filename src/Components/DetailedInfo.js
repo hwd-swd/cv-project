@@ -9,10 +9,14 @@ function DetailedInfo(props) {
         [props.names[2]]:'',
         [props.names[3]]:''
     });
-    const handleSubmit = (fields) => {
-        console.log(fields);
+    const handleSubmit = (field) => {
+        setFields(field);
         setVisible(!visible)
     };
+
+    const toggleVisible = () => {
+        setVisible(!visible)
+    }
 
     const getComponent = () => {
         if(visible){
@@ -21,7 +25,13 @@ function DetailedInfo(props) {
             )
         }else{
             return(
-                <p>asd</p>
+                <div>
+                    <p><strong>{props.names[0]}</strong> {fields[props.names[0]]}</p>
+                    <p><strong>{props.names[1]}</strong> {fields[props.names[1]]}</p>
+                    <p><strong>{props.names[2]}</strong> {fields[props.names[2]]}</p>
+                    <p><strong>{props.names[3]}</strong> {fields[props.names[3]]}</p>
+                    <button onClick={toggleVisible}>edit</button>
+                </div>
             )
         }
     }

@@ -9,12 +9,12 @@ function GeneralInfo() {
 
     const renderContent = () =>{
         return indexes.map(ele=>{
-            return <Item placeholder={placeholders[ele]} name={names[ele]}/>
+            return <Item placeholder={placeholders[ele]} name={names[ele]} key={ele}/>
         })
     }
 
     return (
-        <div class="general">
+        <div className="general">
             {renderContent()}
         </div>
     );
