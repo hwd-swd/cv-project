@@ -10,7 +10,7 @@ function App() {
         <h2>General Information</h2>
         <GeneralInfo/>
         <h2>Work Info</h2>
-        <DetailedInfo/>
+        <DetailedInfo names={['first','second','third','fourth']}/>
 
       </div>
     </div>
