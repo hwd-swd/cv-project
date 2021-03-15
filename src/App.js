@@ -1,9 +1,20 @@
 import React from 'react'
 import GeneralInfo from './Components/GeneralInfo'
+import DetailedInfo from './Components/DetailedInfo'
 
 function App() {
   return (
-    <GeneralInfo/>
+    <div className="main">
+      <h1>CV-Maker</h1>
+      <div className="cv">
+        <h2>General Information</h2>
+        <GeneralInfo/>
+        <h2>Work Info</h2>
+        <DetailedInfo/>
+
+      </div>
+    </div>
+    
   );
 }
 

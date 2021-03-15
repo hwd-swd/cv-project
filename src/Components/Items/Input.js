@@ -22,7 +22,7 @@ function Input(props) {
     return (
         <div>
             <form className={props.name} onSubmit={handleSubmit}>
-                <input type={props.type} placeholder={props.placeholder} defaultValue={props.value===props.placeholder ? '' : props.value} onChange={handleChange} min="1" onBlur={handleSubmit} autoFocus></input>
+                <input type={props.type} placeholder={props.placeholder} defaultValue={props.value} onChange={handleChange} min="1" onBlur={handleSubmit} autoFocus></input>
                 <button>submit</button>
             </form>
         </div>

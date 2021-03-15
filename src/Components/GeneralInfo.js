@@ -1,5 +1,6 @@
 import React from 'react'
 import Item from './Items/Item'
+import '../App.css'
 
 function GeneralInfo() {        
     const indexes = [0,1,2,3];
@@ -13,7 +14,7 @@ function GeneralInfo() {
     }
 
     return (
-        <div>
+        <div class="general">
             {renderContent()}
         </div>
     );
